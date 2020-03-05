@@ -74,10 +74,8 @@ const octavia = {fullName: 'Octavia Butler'}
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
-    octavia.yearBorn = year;
+    obj.yearBorn = year;
 };
-addBirthYearProperty(octavia, 1947);
-console.log(octavia);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -105,6 +103,9 @@ describe('Testing challenge 4', () => {
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
+  people.forEach((person) => {
+    person.isAuthor = true;
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -124,6 +125,9 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
+  arr2.forEach((number) => {
+    arr1.push(number);
+  })
 
 };
 
